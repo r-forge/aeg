@@ -43,7 +43,15 @@ echo $contents; } ?>
 
 <!-- end of project description -->
 
-<p> No content added. </p>
+<p> Conception phase. </p><br>
+What we need?<br>
+<ul>
+<li>Multilanguage support (polish / english?)</li>
+<li>Database for excercises</li>
+<li>XML scheme for excercises template</li>
+<li>what more?</li>
+</ul>
+
 
 <p> The <strong>project summary page</strong> you can find <a href="http://<?php echo $domain; ?>/projects/<?php echo $group_name; ?>/"><strong>here</strong></a>. </p>
 
