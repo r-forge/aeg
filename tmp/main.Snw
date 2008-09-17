@@ -1,0 +1,46 @@
+%
+% run only in the project directory !!
+%
+\input{data/wprowadzenie.tex}
+<<results=tex,echo=FALSE>>=
+
+library(xtable)
+
+odpowiedzi = NULL
+
+for (i in 1:70) {
+
+cat(paste("Karta ", i," \n\n Imie i Nazwisko: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ Nr. indeksu: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ \n"))
+
+source("data/zadanie1.R")
+
+source("data/zadanie2.R")
+
+source("data/zadanie3.R")
+
+source("data/zadanie4.R")
+
+cat(paste("\n\n \\vspace{1cm} Powodzenia!{}\n " ))
+
+cat("\\newpage \n \n ")
+
+odpowiedzi = c(odpowiedzi, paste("\n\n\n\n\n \\vspace{1cm} \\textbf{Karta ",i,"} \n\n\n\n\n \\textbf{Zadanie 1} \n\n\n\n\n", odpowiedz1, "\n\n\n\n\n \\textbf{Zadanie 2} \n\n\n\n\n", odpowiedz2, "\n\n\n\n\n \\textbf{Zadanie 3} \n\n\n\n\n", odpowiedz3, "\n\n\n\n\n \\textbf{Zadanie 4} \n\n\n\n\n", odpowiedz4))
+
+  if (i %% 7 ==0) {
+    odpowiedzi = c(odpowiedzi, "\\clearpage \n\n\n ")
+  }
+
+}
+
+cat("\\begin{multicols}{3} \\scriptsize ")
+
+cat(odpowiedzi)
+
+cat("\\end{multicols} ")
+
+@
+%
+% finalizacja srodowiska
+% 
+\input{data/finalize.tex}
+
