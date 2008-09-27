@@ -1,4 +1,4 @@
-setwd("c:/_Przemek_/Dane/_wykladStatystyka/Slajdy/generatorZadanKolokwium")
+setwd("___HERE_SHOULD_BE_THE_WORKING_DIRECTORY_PATH_____")
 
 Sweave("main.Snw")
 system("pdflatex main.tex")
