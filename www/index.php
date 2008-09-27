@@ -46,7 +46,7 @@ echo $contents; } ?>
 <p> Conception phase. </p><br>
 What we need?<br>
 <ul>
-<li>Multilanguage support (polish / english?)</li>
+<li>Multilanguage support (polish / english?)  <i>Maybe not needed? Just an information (tag?) in the excercises database.</i></li>
 <li>Database for excercises</li>
 <li>XML scheme for excercises template</li>
 <li>what more?</li>
