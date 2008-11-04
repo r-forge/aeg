@@ -1,0 +1,65 @@
+<<results=tex,echo=FALSE>>=
+#
+# inicjalizacja srodowiska LaTeX
+#
+cat(paste(readLines(paste(rootDir,"tex/wprowadzenie.tex",sep="")),"\n"))
+
+#
+# przygotowanie tekstu
+#
+library(xtable)
+library(XML)
+
+korzen  = xmlRoot(xmlTreeParse(plik))
+zadania = xmlChildren(xmlChildren(korzen)$tasks)
+lZadan  = length(zadania)
+
+evaluateRchunk <- function(tekst) {
+  wyrazenia = strsplit(tekst, "%R%", fixed=T)[[1]]
+  if (length(wyrazenia)>1) {
+    indeksy   = seq(2, length(wyrazenia), by=2)
+    wyliczone = sapply(wyrazenia[indeksy], function(x) eval(parse(text=x),envir=.GlobalEnv))
+    wyrazenia[indeksy] = wyliczone
+  }
+  paste(wyrazenia, collapse="")
+}
+
+tresci = NULL
+odpowiedzi = NULL
+
+for (indeksii in 1:numberOfTasks) {
+
+  tresci = c(tresci, "Karta ", indeksii," \n\n Imie i Nazwisko: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ Nr. indeksu: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ \n")
+  odpowiedzi = c(odpowiedzi, "\\textbf{Karta ", indeksii,"} \n")
+
+  for (indeksi in 1:lZadan) {
+     zadanieI = xmlChildren(zadania[[indeksi]])
+     
+     # inicjacja danych, o ile jest
+     if (!is.null(xmlValue(zadanieI$initData))) 
+         eval(parse(text = xmlValue(zadanieI$initData)))
+     # wyliczenie wynikow, o ile sa
+     if (!is.null(xmlValue(zadanieI$resultsComputation))) 
+         eval(parse(text = xmlValue(zadanieI$resultsComputation)))
+     
+     # wyznaczenie tresci
+     tresci = c(tresci, evaluateRchunk(xmlValue(zadanieI$taskContent)), "\\vspace{1cm} \n\n ")
+     # wyznaczenie odpowiedzi
+     odpowiedzi = c(odpowiedzi, evaluateRchunk(xmlValue(zadanieI$resultContent)), "\\vspace{1cm} \n\n ")
+  }
+  tresci = c(tresci, "\\clearpage ")
+}
+
+cat(tresci )
+cat("\n\\clearpage\n ")
+
+cat("\\begin{multicols}{3} \\scriptsize ")
+cat(odpowiedzi)
+cat("\\end{multicols} ")
+
+#
+# finalizacja srodowiska LaTeX
+#
+cat(paste(readLines(paste(rootDir,"tex/finalize.tex",sep="")),"\n"))
+
+@

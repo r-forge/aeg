@@ -1,0 +1,4027 @@
+\documentclass[a4paper,12pt]{article} 
+ \usepackage[a4paper,top=1cm,left=1cm,right=1cm,bottom=1cm]{geometry} 
+ \usepackage[cp1250]{inputenc} 
+ \usepackage[OT4,plmath,MeX]{polski} 
+ \usepackage{../tex/Sweave} 
+ \usepackage{multicol} 
+ %\usepackage[pdftex]{graphics} 
+  
+ \begin{document} Karta  1  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=(  7.5,  8.0,  6.6, 11.1, 11.4, 10.8, 11.9,  9.5,  9.6, 10.5,  9.2,  7.6,  8.4, 11.1,  8.1 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 50 osobników rasy bia³ej, 30 osobników rasy ¿ó³ej oraz 24 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:32 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 1 & 11 & 4 & 89 & 26 & 2 & 24 & 5 & 44 & 11 & 16 & 34 & 17 & 8 & 29 \\
+  po & 34 & 23 & 61 & 18 & 31 & 43 & 28 & 59 & 28 & 28 & 48 & 140 & 74 & 30 & 54 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.1144 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  2  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=( 11.0, 10.1,  9.3, 14.8, 10.8,  6.0,  5.9, 12.2, 10.9,  6.3,  7.8,  6.4, 12.7, 10.0,  8.8 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 39 osobników rasy bia³ej, 42 osobników rasy ¿ó³ej oraz 24 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 3 & 8 & 86 & 6 & 10 & 5 & 32 & 19 & 14 & 16 & 71 & 14 & 3 & 2 & 1 \\
+  po & 29 & 63 & 36 & 20 & 181 & 29 & 19 & 96 & 47 & 115 & 42 & 24 & 39 & 38 & 123 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.2308 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  3  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=(  8.9,  6.5,  9.2, 11.0, 12.2,  4.7, 11.7,  9.0, 13.4, 13.4,  3.4,  3.2,  9.5,  7.5,  8.9 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 31 osobników rasy bia³ej, 33 osobników rasy ¿ó³ej oraz 24 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 26 & 27 & 117 & 26 & 34 & 29 & 92 & 4 & 57 & 1 & 24 & 14 & 33 & 30 & 121 \\
+  po & 23 & 66 & 29 & 77 & 43 & 24 & 44 & 127 & 73 & 50 & 34 & 46 & 20 & 52 & 55 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.2962 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  4  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=( 10.6,  8.6,  6.8,  8.6, 11.3,  7.7,  7.0,  4.6,  8.5, 14.8,  6.8, 13.6,  8.7,  8.8,  7.5 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 25 osobników rasy bia³ej, 36 osobników rasy ¿ó³ej oraz 29 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 17 & 7 & 17 & 87 & 29 & 19 & 20 & 5 & 16 & 1 & 16 & 10 & 47 & 2 & 66 \\
+  po & 101 & 55 & 23 & 31 & 33 & 18 & 36 & 51 & 44 & 54 & 29 & 51 & 58 & 31 & 30 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.2233 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  5  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=(  7.4,  8.6, 10.5,  9.1,  6.1,  5.9,  6.4,  9.5, 14.0,  5.2,  7.4, 10.3,  9.4,  4.0, 14.8 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 36 osobników rasy bia³ej, 36 osobników rasy ¿ó³ej oraz 28 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 4 & 23 & 15 & 39 & 14 & 1 & 7 & 24 & 31 & 4 & 121 & 8 & 40 & 22 & 4 \\
+  po & 61 & 93 & 47 & 47 & 21 & 19 & 67 & 80 & 66 & 144 & 61 & 34 & 74 & 41 & 32 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.4064 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  6  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=( 10.8,  6.8,  7.0,  7.3,  7.1,  6.7, 10.1, 10.7,  7.7,  7.7,  7.7,  4.5,  7.4, 11.7,  6.2 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 32 osobników rasy bia³ej, 36 osobników rasy ¿ó³ej oraz 26 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 29 & 31 & 56 & 35 & 43 & 7 & 66 & 1 & 123 & 8 & 44 & 75 & 32 & 14 & 1 \\
+  po & 31 & 44 & 37 & 57 & 27 & 30 & 22 & 29 & 95 & 19 & 58 & 23 & 56 & 22 & 63 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.3932 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  7  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=(  6.2,  7.5,  9.8,  5.3,  9.1, 12.0, 10.6,  8.1, 10.2,  9.6, 11.4, 12.2, 12.2,  8.7,  6.6 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 26 osobników rasy bia³ej, 38 osobników rasy ¿ó³ej oraz 20 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 22 & 9 & 66 & 16 & 54 & 122 & 7 & 65 & 16 & 2 & 17 & 30 & 30 & 102 & 9 \\
+  po & 52 & 29 & 29 & 26 & 29 & 74 & 45 & 69 & 54 & 111 & 23 & 31 & 34 & 25 & 99 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.3495 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  8  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=(  6.6, 11.4,  9.8,  3.2,  6.0,  9.0,  5.8,  9.6,  7.4,  8.8, 10.5, 10.5,  8.2,  5.3, 11.9 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 30 osobników rasy bia³ej, 45 osobników rasy ¿ó³ej oraz 21 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 2 & 11 & 4 & 10 & 25 & 22 & 15 & 8 & 11 & 14 & 12 & 2 & 42 & 10 & 23 \\
+  po & 67 & 42 & 45 & 32 & 74 & 40 & 45 & 31 & 43 & 25 & 38 & 70 & 76 & 39 & 19 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.2967 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  9  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=(  6.3,  6.5, 12.1,  8.7,  9.0,  8.2,  5.9, 14.0,  8.6,  9.7,  9.4,  8.4, 12.2,  8.6,  5.3 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 34 osobników rasy bia³ej, 32 osobników rasy ¿ó³ej oraz 27 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 4 & 34 & 11 & 13 & 44 & 1 & 19 & 65 & 44 & 40 & 25 & 128 & 20 & 5 & 48 \\
+  po & 37 & 22 & 22 & 59 & 32 & 31 & 21 & 62 & 49 & 55 & 74 & 29 & 53 & 19 & 28 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = -0.008898 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  10  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=(  9.7,  6.1,  6.1,  7.7,  9.0,  9.4,  6.1, 11.9, 10.4,  9.9,  7.6,  8.4,  6.3,  6.5, 13.4 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 42 osobników rasy bia³ej, 39 osobników rasy ¿ó³ej oraz 28 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 30 & 28 & 38 & 98 & 51 & 32 & 23 & 9 & 23 & 60 & 4 & 32 & 33 & 2 & 49 \\
+  po & 19 & 128 & 58 & 27 & 179 & 21 & 65 & 59 & 21 & 31 & 109 & 30 & 118 & 79 & 22 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.2559 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  11  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=(  5.2, 10.5,  9.1, 12.5,  5.9,  1.9,  7.4,  9.3,  8.0,  9.8,  5.2,  5.8,  5.6, 14.4, 11.3 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 39 osobników rasy bia³ej, 39 osobników rasy ¿ó³ej oraz 29 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 117 & 88 & 24 & 55 & 12 & 2 & 33 & 2 & 38 & 0 & 29 & 36 & 3 & 33 & 8 \\
+  po & 30 & 29 & 31 & 23 & 47 & 26 & 30 & 51 & 23 & 34 & 23 & 65 & 26 & 30 & 84 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.4559 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  12  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=(  8.9,  7.8,  4.1,  6.5,  6.7,  7.1,  3.5,  5.7, 11.8,  5.8, 11.8,  9.2,  9.4, 13.2,  6.0 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 37 osobników rasy bia³ej, 35 osobników rasy ¿ó³ej oraz 29 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 5 & 34 & 76 & 8 & 8 & 71 & 28 & 59 & 173 & 96 & 26 & 9 & 24 & 13 & 1 \\
+  po & 145 & 41 & 29 & 97 & 30 & 76 & 40 & 63 & 38 & 26 & 30 & 20 & 49 & 26 & 47 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.3105 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  13  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=(  8.2,  8.9, 10.8, 10.0,  9.0,  9.1,  8.6,  3.1,  8.2,  9.2, 11.0,  9.5,  8.5,  6.1,  6.9 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 43 osobników rasy bia³ej, 39 osobników rasy ¿ó³ej oraz 22 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 6 & 8 & 10 & 24 & 23 & 61 & 7 & 24 & 86 & 29 & 11 & 7 & 8 & 0 & 67 \\
+  po & 22 & 44 & 76 & 102 & 25 & 77 & 36 & 92 & 39 & 69 & 39 & 18 & 20 & 24 & 24 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.3377 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  14  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=(  9.8,  8.2,  7.7, 11.8, 11.6,  5.9, 11.2, 10.9, 11.8,  7.5, 11.3, 14.9,  8.8,  5.3,  7.2 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 29 osobników rasy bia³ej, 32 osobników rasy ¿ó³ej oraz 27 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 18 & 20 & 4 & 3 & 11 & 6 & 26 & 15 & 28 & 38 & 27 & 52 & 19 & 4 & 31 \\
+  po & 24 & 85 & 35 & 136 & 26 & 33 & 20 & 69 & 42 & 59 & 30 & 130 & 56 & 54 & 29 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.2828 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  15  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=(  7.4, 10.5, 12.2,  8.4,  5.6,  8.9, 14.0,  8.5,  5.8,  6.2,  8.8, 12.4,  7.1,  9.1, 11.5 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 31 osobników rasy bia³ej, 45 osobników rasy ¿ó³ej oraz 26 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 86 & 16 & 22 & 26 & 54 & 15 & 15 & 32 & 21 & 12 & 70 & 3 & 30 & 79 & 66 \\
+  po & 32 & 29 & 20 & 32 & 45 & 76 & 30 & 46 & 26 & 33 & 51 & 41 & 20 & 48 & 32 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.06943 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  16  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=(  3.9,  7.4, 13.4,  7.2,  9.8, 11.9,  9.5,  5.7, 11.4,  4.9, 12.0,  5.9, 10.6,  9.6, 12.8 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 42 osobników rasy bia³ej, 31 osobników rasy ¿ó³ej oraz 30 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 2 & 21 & 53 & 12 & 34 & 41 & 73 & 59 & 10 & 18 & 119 & 45 & 6 & 11 & 61 \\
+  po & 71 & 31 & 21 & 38 & 33 & 26 & 83 & 46 & 19 & 25 & 40 & 28 & 45 & 44 & 26 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.1667 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  17  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=( 13.3,  9.1,  8.5, 11.2, 10.3,  5.9, 10.8,  8.7,  9.6,  9.7,  8.4,  9.4, 12.1,  5.5,  8.3 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 30 osobników rasy bia³ej, 33 osobników rasy ¿ó³ej oraz 21 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 12 & 1 & 14 & 38 & 48 & 1 & 8 & 4 & 23 & 11 & 39 & 44 & 27 & 1 & 8 \\
+  po & 35 & 19 & 20 & 42 & 69 & 67 & 19 & 51 & 35 & 41 & 46 & 36 & 74 & 46 & 74 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.36 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  18  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=(  9.7,  6.9, 10.8, 10.7, 15.2,  7.1,  7.1,  4.8,  8.8,  6.9, 12.1,  3.3,  7.1, 10.0,  7.6 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 34 osobników rasy bia³ej, 26 osobników rasy ¿ó³ej oraz 16 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 32 & 49 & 42 & 13 & 54 & 40 & 2 & 12 & 32 & 7 & 37 & 64 & 93 & 30 & 66 \\
+  po & 35 & 27 & 35 & 22 & 72 & 58 & 64 & 60 & 59 & 44 & 49 & 58 & 42 & 28 & 31 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.346 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  19  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=(  5.6, 10.0,  7.3,  9.8,  9.7,  4.8, 10.7,  8.8,  4.9,  9.7, 10.3,  6.2, 10.9,  8.9, 11.7 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 31 osobników rasy bia³ej, 36 osobników rasy ¿ó³ej oraz 22 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 43 & 8 & 28 & 6 & 34 & 19 & 31 & 4 & 2 & 15 & 24 & 21 & 5 & 6 & 7 \\
+  po & 34 & 21 & 51 & 20 & 26 & 35 & 64 & 39 & 137 & 61 & 53 & 71 & 38 & 25 & 18 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.2287 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  20  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=(  8.5,  8.2, 11.5,  8.4, 10.2, 12.4,  8.5, 11.1, 10.8, 10.3,  9.9, 10.4,  6.1,  6.7,  8.6 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 38 osobników rasy bia³ej, 26 osobników rasy ¿ó³ej oraz 28 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 6 & 30 & 23 & 95 & 44 & 25 & 3 & 17 & 25 & 17 & 0 & 35 & 8 & 10 & 4 \\
+  po & 94 & 23 & 19 & 19 & 47 & 38 & 41 & 69 & 57 & 20 & 48 & 24 & 66 & 52 & 21 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.2217 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  21  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=(  6.9, 11.2, 12.0,  8.4, 12.9,  8.8, 12.0,  6.2, 11.3, 13.6, 11.9,  8.7,  4.2, 11.0,  7.8 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 40 osobników rasy bia³ej, 43 osobników rasy ¿ó³ej oraz 23 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 1 & 86 & 58 & 15 & 32 & 8 & 27 & 44 & 11 & 23 & 68 & 14 & 29 & 13 & 28 \\
+  po & 81 & 43 & 114 & 78 & 33 & 34 & 59 & 22 & 21 & 33 & 36 & 69 & 71 & 48 & 145 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.4113 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  22  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=(  5.3, 10.8,  7.6,  8.8, 10.0,  9.3,  8.6,  8.9,  9.3, 13.4, 10.5, 12.7,  9.3,  9.6,  9.6 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 32 osobników rasy bia³ej, 44 osobników rasy ¿ó³ej oraz 29 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 13 & 14 & 31 & 111 & 35 & 33 & 9 & 3 & 12 & 14 & 59 & 34 & 13 & 53 & 5 \\
+  po & 52 & 36 & 28 & 27 & 65 & 42 & 135 & 183 & 50 & 29 & 23 & 33 & 84 & 77 & 27 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.5089 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  23  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=(  7.0, 12.0,  5.0, 11.9,  8.7,  9.8,  8.8, 11.8,  8.3,  9.0,  5.9,  9.1, 12.1,  8.6,  7.3 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 32 osobników rasy bia³ej, 39 osobników rasy ¿ó³ej oraz 32 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 10 & 10 & 54 & 32 & 10 & 32 & 47 & 35 & 52 & 53 & 28 & 23 & 49 & 35 & 39 \\
+  po & 107 & 50 & 27 & 18 & 26 & 19 & 33 & 46 & 35 & 24 & 33 & 21 & 28 & 46 & 63 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.2326 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  24  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=(  9.0,  9.2, 12.0,  6.7, 10.4,  8.8, 11.7,  6.6,  8.6, 11.8,  2.9,  9.4,  9.9,  5.7, 11.3 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 36 osobników rasy bia³ej, 39 osobników rasy ¿ó³ej oraz 21 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 11 & 50 & 0 & 3 & 21 & 43 & 2 & 31 & 6 & 7 & 5 & 42 & 11 & 36 & 18 \\
+  po & 35 & 40 & 18 & 21 & 27 & 29 & 23 & 45 & 44 & 57 & 33 & 24 & 49 & 80 & 37 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = -0.02501 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  25  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=(  7.5,  9.9,  7.7, 11.6,  3.5,  8.4, 10.2, 11.7,  7.4,  9.1, 12.3,  8.3,  9.6,  5.2,  6.1 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 35 osobników rasy bia³ej, 33 osobników rasy ¿ó³ej oraz 25 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 26 & 2 & 33 & 125 & 14 & 20 & 35 & 17 & 18 & 54 & 12 & 18 & 36 & 9 & 3 \\
+  po & 44 & 105 & 33 & 57 & 55 & 19 & 47 & 41 & 45 & 22 & 37 & 25 & 40 & 47 & 34 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.481 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  26  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=(  6.6,  4.2,  6.0, 10.0,  6.1, 11.3, 11.6, 13.6, 10.6, 10.3,  7.7, 10.4, 10.4,  7.5, 12.0 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 32 osobników rasy bia³ej, 29 osobników rasy ¿ó³ej oraz 21 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 15 & 5 & 1 & 71 & 105 & 49 & 21 & 1 & 7 & 24 & 34 & 3 & 7 & 7 & 12 \\
+  po & 97 & 71 & 51 & 31 & 34 & 127 & 55 & 26 & 31 & 20 & 44 & 63 & 45 & 38 & 35 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.3264 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  27  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=(  5.8,  5.9, 11.3, 11.5,  7.1,  8.6,  3.3,  6.5, 10.1,  6.9,  7.4,  9.3, 11.3,  4.4,  4.7 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 33 osobników rasy bia³ej, 34 osobników rasy ¿ó³ej oraz 26 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:35 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 6 & 11 & 8 & 12 & 8 & 6 & 16 & 36 & 6 & 8 & 9 & 30 & 51 & 68 & 84 \\
+  po & 20 & 36 & 22 & 72 & 42 & 33 & 22 & 50 & 21 & 89 & 57 & 52 & 66 & 53 & 68 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.4349 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  28  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=(  9.1,  9.3, 10.8,  6.4,  9.5, 12.3, 11.6,  6.6,  8.7, 12.1, 10.4,  9.4,  8.9, 12.9, 13.4 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 36 osobników rasy bia³ej, 30 osobników rasy ¿ó³ej oraz 23 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:35 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 88 & 55 & 1 & 13 & 92 & 13 & 8 & 2 & 44 & 31 & 4 & 47 & 13 & 171 & 14 \\
+  po & 38 & 89 & 34 & 104 & 22 & 79 & 33 & 39 & 34 & 66 & 72 & 34 & 147 & 24 & 33 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.2465 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  29  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=( 10.3,  8.7,  6.3,  9.5, 11.6,  9.3, 11.0,  8.6,  7.6,  8.6,  8.9,  6.4, 12.3, 11.2, 12.2 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 43 osobników rasy bia³ej, 29 osobników rasy ¿ó³ej oraz 25 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:35 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 15 & 9 & 15 & 5 & 49 & 89 & 8 & 6 & 67 & 14 & 12 & 2 & 32 & 19 & 1 \\
+  po & 20 & 21 & 89 & 34 & 33 & 29 & 48 & 24 & 22 & 75 & 73 & 20 & 152 & 24 & 45 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = 0.1446 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage  Karta  30  
+
+ Imie i Nazwisko: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Nr. indeksu: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+ \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=( 10.4, 15.5,  7.8, 10.6, 11.0,  8.1,  8.9, 13.3, 11.2,  6.7,  6.9,  6.1,  6.2, 10.0, 12.2 ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej. \vspace{1cm} 
+
+  \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o 34 osobników rasy bia³ej, 35 osobników rasy ¿ó³ej oraz 18 osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:35 8
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+  \hline
+  \hline
+przed & 8 & 3 & 46 & 12 & 26 & 7 & 41 & 17 & 16 & 6 & 12 & 17 & 2 & 22 & 25 \\
+  po & 55 & 61 & 24 & 41 & 18 & 33 & 31 & 85 & 116 & 24 & 44 & 80 & 24 & 115 & 26 \\
+   \hline
+\end{tabular}
+ 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = -0.03815 $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ. \vspace{1cm} 
+
+  \clearpage \clearpage\begin{multicols}{3} \scriptsize \textbf{Karta  1 } 
+ srednia: 9.42 
+     
+     wariancja 2.75886  
+     
+     b³ad standardowy 0.428863 
+     
+     przedzial=( 8.14334 10.6967 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:32 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 50.00 & 30.00 & 24.00 \\
+   & 50.00 & 70.00 & 76.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:32 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 34.67 & 34.67 & 34.67 \\
+  2 & 65.33 & 65.33 & 65.33 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 16.3658 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.000279394 \vspace{1cm} 
+
+  9, 3, 12.5, 14, 2, 10, 1, 11, 4, 5, 8, 15, 12.5, 6, 7 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 9, 3, 12.5, 14, 2, 10, 1, 11, 4, 5, 8, 15, 12.5, 6, 7 
+  
+  Wp, Wm:  18,  102 
+  
+  W=[0, 26]  
+  
+  T=  18 
+  
+  p= 0.0183976 \vspace{1cm} 
+
+  korelacja: 0.114421
+     
+     fp: 0.114925
+     
+     t: 0.689548
+     
+     p.value: 0.482036 \vspace{1cm} 
+
+  \textbf{Karta  2 } 
+ srednia: 9.53333 
+     
+     wariancja 7.18524  
+     
+     b³ad standardowy 0.69211 
+     
+     przedzial=( 7.47303 11.5936 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 39.00 & 42.00 & 24.00 \\
+   & 61.00 & 58.00 & 76.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 35.00 & 35.00 & 35.00 \\
+  2 & 65.00 & 65.00 & 65.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 8.17582 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.0167742 \vspace{1cm} 
+
+  5, 11, 10, 3, 15, 4, 2, 12, 7, 13, 6, 1, 8.5, 8.5, 14 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 5, 11, 10, 3, 15, 4, 2, 12, 7, 13, 6, 1, 8.5, 8.5, 14 
+  
+  Wp, Wm:  18,  102 
+  
+  W=[0, 26]  
+  
+  T=  18 
+  
+  p= 0.0183976 \vspace{1cm} 
+
+  korelacja: 0.230817
+     
+     fp: 0.235052
+     
+     t: 1.41031
+     
+     p.value: 0.151871 \vspace{1cm} 
+
+  \textbf{Karta  3 } 
+ srednia: 8.83333 
+     
+     wariancja 10.8667  
+     
+     b³ad standardowy 0.851143 
+     
+     przedzial=( 6.29961 11.3671 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 31.00 & 33.00 & 24.00 \\
+   & 69.00 & 67.00 & 76.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 29.33 & 29.33 & 29.33 \\
+  2 & 70.67 & 70.67 & 70.67 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 2.15480 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.340479 \vspace{1cm} 
+
+  1, 9, 14, 12, 3, 2, 10, 15, 6, 11, 4, 8, 5, 7, 13 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 1, 9, 14, 12, 3, 2, 10, 15, 6, 11, 4, 8, 5, 7, 13 
+  
+  Wp, Wm:  45,  75 
+  
+  W=[0, 26]  
+  
+  T=  45 
+  
+  p= 0.421204 \vspace{1cm} 
+
+  korelacja: 0.29622
+     
+     fp: 0.305371
+     
+     t: 1.83222
+     
+     p.value: 0.0634609 \vspace{1cm} 
+
+  \textbf{Karta  4 } 
+ srednia: 8.92667 
+     
+     wariancja 7.16067  
+     
+     b³ad standardowy 0.690925 
+     
+     przedzial=( 6.86989 10.9834 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 25.00 & 36.00 & 29.00 \\
+   & 75.00 & 64.00 & 71.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 30.00 & 30.00 & 30.00 \\
+  2 & 70.00 & 70.00 & 70.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 2.95238 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.228507 \vspace{1cm} 
+
+  15, 12, 3, 14, 2, 1, 6, 11, 7, 13, 5, 10, 4, 8, 9 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 15, 12, 3, 14, 2, 1, 6, 11, 7, 13, 5, 10, 4, 8, 9 
+  
+  Wp, Wm:  24,  96 
+  
+  W=[0, 26]  
+  
+  T=  24 
+  
+  p= 0.0412598 \vspace{1cm} 
+
+  korelacja: 0.223258
+     
+     fp: 0.227082
+     
+     t: 1.36249
+     
+     p.value: 0.166119 \vspace{1cm} 
+
+  \textbf{Karta  5 } 
+ srednia: 8.57333 
+     
+     wariancja 9.26924  
+     
+     b³ad standardowy 0.786097 
+     
+     przedzial=( 6.23324 10.9134 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 36.00 & 36.00 & 28.00 \\
+   & 64.00 & 64.00 & 72.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 33.33 & 33.33 & 33.33 \\
+  2 & 66.67 & 66.67 & 66.67 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 1.92 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.382893 \vspace{1cm} 
+
+  11, 14, 7, 2, 1, 3, 12.5, 10, 9, 15, 12.5, 5, 8, 4, 6 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 11, 14, 7, 2, 1, 3, 12.5, 10, 9, 15, 12.5, 5, 8, 4, 6 
+  
+  Wp, Wm:  12.5,  107.5 
+  
+  W=[0, 26]  
+  
+  T=  12.5 
+  
+  p= 0.00758605 \vspace{1cm} 
+
+  korelacja: 0.406423
+     
+     fp: 0.431319
+     
+     t: 2.58791
+     
+     p.value: 0.00925909 \vspace{1cm} 
+
+  \textbf{Karta  6 } 
+ srednia: 7.96 
+     
+     wariancja 3.91114  
+     
+     b³ad standardowy 0.51063 
+     
+     przedzial=( 6.43994 9.48006 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 32.00 & 36.00 & 26.00 \\
+   & 68.00 & 64.00 & 74.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 31.33 & 31.33 & 31.33 \\
+  2 & 68.67 & 68.67 & 68.67 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 2.35489 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.308066 \vspace{1cm} 
+
+  1, 4, 7, 8, 6, 9, 13, 11.5, 11.5, 3, 5, 14, 10, 2, 15 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 1, 4, 7, 8, 6, 9, 13, 11.5, 11.5, 3, 5, 14, 10, 2, 15 
+  
+  Wp, Wm:  51.5,  68.5 
+  
+  W=[0, 26]  
+  
+  T=  51.5 
+  
+  p= 0.649497 \vspace{1cm} 
+
+  korelacja: 0.393205
+     
+     fp: 0.415586
+     
+     t: 2.49351
+     
+     p.value: 0.0120728 \vspace{1cm} 
+
+  \textbf{Karta  7 } 
+ srednia: 9.3 
+     
+     wariancja 4.95286  
+     
+     b³ad standardowy 0.574622 
+     
+     przedzial=( 7.58944 11.0106 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 26.00 & 38.00 & 20.00 \\
+   & 74.00 & 62.00 & 80.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 28.00 & 28.00 & 28.00 \\
+  2 & 72.00 & 72.00 & 72.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 8.33333 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.0155039 \vspace{1cm} 
+
+  8, 6, 9, 5, 7, 12, 10.5, 2.5, 10.5, 15, 4, 1, 2.5, 13, 14 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 8, 6, 9, 5, 7, 12, 10.5, 2.5, 10.5, 15, 4, 1, 2.5, 13, 14 
+  
+  Wp, Wm:  41,  79 
+  
+  W=[0, 26]  
+  
+  T=  41 
+  
+  p= 0.293188 \vspace{1cm} 
+
+  korelacja: 0.349524
+     
+     fp: 0.364901
+     
+     t: 2.18941
+     
+     p.value: 0.0270542 \vspace{1cm} 
+
+  \textbf{Karta  8 } 
+ srednia: 8.26667 
+     
+     wariancja 6.22667  
+     
+     b³ad standardowy 0.644291 
+     
+     przedzial=( 6.34871 10.1846 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 30.00 & 45.00 & 21.00 \\
+   & 70.00 & 55.00 & 79.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 32.00 & 32.00 & 32.00 \\
+  2 & 68.00 & 68.00 & 68.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 13.5110 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.00116444 \vspace{1cm} 
+
+  14, 9, 12, 4, 13, 3, 8, 5, 10, 2, 6, 15, 11, 7, 1 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 14, 9, 12, 4, 13, 3, 8, 5, 10, 2, 6, 15, 11, 7, 1 
+  
+  Wp, Wm:  1,  119 
+  
+  W=[0, 26]  
+  
+  T=  1 
+  
+  p= 0.000122070 \vspace{1cm} 
+
+  korelacja: 0.296688
+     
+     fp: 0.305884
+     
+     t: 1.83530
+     
+     p.value: 0.0630242 \vspace{1cm} 
+
+  \textbf{Karta  9 } 
+ srednia: 8.86 
+     
+     wariancja 5.96114  
+     
+     b³ad standardowy 0.630404 
+     
+     przedzial=( 6.98339 10.7366 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 34.00 & 32.00 & 27.00 \\
+   & 66.00 & 68.00 & 73.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 31.00 & 31.00 & 31.00 \\
+  2 & 69.00 & 69.00 & 69.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 1.21552 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.544569 \vspace{1cm} 
+
+  11.5, 5.5, 4, 13, 5.5, 10, 1, 2, 3, 8, 14, 15, 11.5, 7, 9 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 11.5, 5.5, 4, 13, 5.5, 10, 1, 2, 3, 8, 14, 15, 11.5, 7, 9 
+  
+  Wp, Wm:  37,  83 
+  
+  W=[0, 26]  
+  
+  T=  37 
+  
+  p= 0.201098 \vspace{1cm} 
+
+  korelacja: -0.00889841
+     
+     fp: -0.00889865
+     
+     t: -0.0533919
+     
+     p.value: 0.95654 \vspace{1cm} 
+
+  \textbf{Karta  10 } 
+ srednia: 8.56667 
+     
+     wariancja 5.08238  
+     
+     b³ad standardowy 0.582087 
+     
+     przedzial=( 6.83388 10.2994 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 42.00 & 39.00 & 28.00 \\
+   & 58.00 & 61.00 & 72.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 36.33 & 36.33 & 36.33 \\
+  2 & 63.67 & 63.67 & 63.67 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 4.69763 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.0954821 \vspace{1cm} 
+
+  3.5, 13, 5, 10, 15, 3.5, 8, 9, 1.5, 7, 14, 1.5, 12, 11, 6 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 3.5, 13, 5, 10, 15, 3.5, 8, 9, 1.5, 7, 14, 1.5, 12, 11, 6 
+  
+  Wp, Wm:  33,  87 
+  
+  W=[0, 26]  
+  
+  T=  33 
+  
+  p= 0.132143 \vspace{1cm} 
+
+  korelacja: 0.255875
+     
+     fp: 0.26169
+     
+     t: 1.57014
+     
+     p.value: 0.111017 \vspace{1cm} 
+
+  \textbf{Karta  11 } 
+ srednia: 8.12667 
+     
+     wariancja 10.8935  
+     
+     b³ad standardowy 0.852194 
+     
+     przedzial=( 5.58982 10.6635 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 39.00 & 39.00 & 29.00 \\
+   & 61.00 & 61.00 & 71.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 35.67 & 35.67 & 35.67 \\
+  2 & 64.33 & 64.33 & 64.33 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 2.90543 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.233934 \vspace{1cm} 
+
+  15, 13, 4, 9, 11, 7, 1.5, 12, 5, 10, 3, 8, 6, 1.5, 14 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 15, 13, 4, 9, 11, 7, 1.5, 12, 5, 10, 3, 8, 6, 1.5, 14 
+  
+  Wp, Wm:  48,  72 
+  
+  W=[0, 26]  
+  
+  T=  48 
+  
+  p= 0.513571 \vspace{1cm} 
+
+  korelacja: 0.455881
+     
+     fp: 0.4921
+     
+     t: 2.9526
+     
+     p.value: 0.00311364 \vspace{1cm} 
+
+  \textbf{Karta  12 } 
+ srednia: 7.83333 
+     
+     wariancja 8.14952  
+     
+     b³ad standardowy 0.73709 
+     
+     przedzial=( 5.63913 10.0275 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 37.00 & 35.00 & 29.00 \\
+   & 63.00 & 65.00 & 71.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:33 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 33.67 & 33.67 & 33.67 \\
+  2 & 66.33 & 66.33 & 66.33 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 1.55232 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.460171 \vspace{1cm} 
+
+  15, 4, 11, 13, 8, 3, 6, 1.5, 14, 12, 1.5, 5, 9, 7, 10 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 15, 4, 11, 13, 8, 3, 6, 1.5, 14, 12, 1.5, 5, 9, 7, 10 
+  
+  Wp, Wm:  37,  83 
+  
+  W=[0, 26]  
+  
+  T=  37 
+  
+  p= 0.201189 \vspace{1cm} 
+
+  korelacja: 0.310533
+     
+     fp: 0.321135
+     
+     t: 1.92681
+     
+     p.value: 0.0511497 \vspace{1cm} 
+
+  \textbf{Karta  13 } 
+ srednia: 8.47333 
+     
+     wariancja 3.83638  
+     
+     b³ad standardowy 0.505726 
+     
+     przedzial=( 6.96787 9.9788 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 43.00 & 39.00 & 22.00 \\
+   & 57.00 & 61.00 & 78.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 34.67 & 34.67 & 34.67 \\
+  2 & 65.33 & 65.33 & 65.33 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 10.9792 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.0041295 \vspace{1cm} 
+
+  4.5, 9, 13, 15, 1, 4.5, 8, 14, 12, 10, 7, 2, 3, 6, 11 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 4.5, 9, 13, 15, 1, 4.5, 8, 14, 12, 10, 7, 2, 3, 6, 11 
+  
+  Wp, Wm:  23,  97 
+  
+  W=[0, 26]  
+  
+  T=  23 
+  
+  p= 0.0381277 \vspace{1cm} 
+
+  korelacja: 0.337707
+     
+     fp: 0.351502
+     
+     t: 2.10901
+     
+     p.value: 0.0330748 \vspace{1cm} 
+
+  \textbf{Karta  14 } 
+ srednia: 9.59333 
+     
+     wariancja 6.96495  
+     
+     b³ad standardowy 0.681418 
+     
+     przedzial=( 7.56486 11.6218 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 29.00 & 32.00 & 27.00 \\
+   & 71.00 & 68.00 & 73.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 29.33 & 29.33 & 29.33 \\
+  2 & 70.67 & 70.67 & 70.67 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 0.611063 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.736732 \vspace{1cm} 
+
+  3.5, 13, 9, 15, 6, 8, 3.5, 12, 5, 7, 2, 14, 10, 11, 1 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 3.5, 13, 9, 15, 6, 8, 3.5, 12, 5, 7, 2, 14, 10, 11, 1 
+  
+  Wp, Wm:  4.5,  115.5 
+  
+  W=[0, 26]  
+  
+  T=  4.5 
+  
+  p= 0.00178156 \vspace{1cm} 
+
+  korelacja: 0.282826
+     
+     fp: 0.290751
+     
+     t: 1.74451
+     
+     p.value: 0.0770058 \vspace{1cm} 
+
+  \textbf{Karta  15 } 
+ srednia: 9.09333 
+     
+     wariancja 6.54638  
+     
+     b³ad standardowy 0.660625 
+     
+     przedzial=( 7.12676 11.0599 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 31.00 & 45.00 & 26.00 \\
+   & 69.00 & 55.00 & 74.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 34.00 & 34.00 & 34.00 \\
+  2 & 66.00 & 66.00 & 66.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 8.64528 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.0132648 \vspace{1cm} 
+
+  14, 6, 1, 3, 4, 15, 8, 7, 2, 10, 9, 13, 5, 11, 12 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 14, 6, 1, 3, 4, 15, 8, 7, 2, 10, 9, 13, 5, 11, 12 
+  
+  Wp, Wm:  56,  64 
+  
+  W=[0, 26]  
+  
+  T=  56 
+  
+  p= 0.846924 \vspace{1cm} 
+
+  korelacja: 0.069434
+     
+     fp: 0.0695459
+     
+     t: 0.417275
+     
+     p.value: 0.670306 \vspace{1cm} 
+
+  \textbf{Karta  16 } 
+ srednia: 9.06667 
+     
+     wariancja 9.27381  
+     
+     b³ad standardowy 0.786291 
+     
+     przedzial=( 6.726 11.4073 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 42.00 & 31.00 & 30.00 \\
+   & 58.00 & 69.00 & 70.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 34.33 & 34.33 & 34.33 \\
+  2 & 65.67 & 65.67 & 65.67 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 3.93278 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.139961 \vspace{1cm} 
+
+  14, 4.5, 10, 9, 1, 7, 4.5, 6, 3, 2, 15, 8, 13, 11, 12 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 14, 4.5, 10, 9, 1, 7, 4.5, 6, 3, 2, 15, 8, 13, 11, 12 
+  
+  Wp, Wm:  59,  61 
+  
+  W=[0, 26]  
+  
+  T=  59 
+  
+  p= 0.97734 \vspace{1cm} 
+
+  korelacja: 0.16667
+     
+     fp: 0.168240
+     
+     t: 1.00944
+     
+     p.value: 0.303997 \vspace{1cm} 
+
+  \textbf{Karta  17 } 
+ srednia: 9.38667 
+     
+     wariancja 4.26410  
+     
+     b³ad standardowy 0.533173 
+     
+     przedzial=( 7.7995 10.9738 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 30.00 & 33.00 & 21.00 \\
+   & 70.00 & 67.00 & 79.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 28.00 & 28.00 & 28.00 \\
+  2 & 72.00 & 72.00 & 72.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 3.86905 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.144493 \vspace{1cm} 
+
+  9, 7, 2, 1, 8, 14.5, 5, 12.5, 6, 10, 3, 4, 12.5, 11, 14.5 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 9, 7, 2, 1, 8, 14.5, 5, 12.5, 6, 10, 3, 4, 12.5, 11, 14.5 
+  
+  Wp, Wm:  4,  116 
+  
+  W=[0, 26]  
+  
+  T=  4 
+  
+  p= 0.00161347 \vspace{1cm} 
+
+  korelacja: 0.359982
+     
+     fp: 0.376865
+     
+     t: 2.26119
+     
+     p.value: 0.0225118 \vspace{1cm} 
+
+  \textbf{Karta  18 } 
+ srednia: 8.54 
+     
+     wariancja 8.87686  
+     
+     b³ad standardowy 0.769279 
+     
+     przedzial=( 6.24998 10.8300 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 34.00 & 26.00 & 16.00 \\
+   & 66.00 & 74.00 & 84.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 25.33 & 25.33 & 25.33 \\
+  2 & 74.67 & 74.67 & 74.67 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 8.59962 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.0135711 \vspace{1cm} 
+
+  2, 9, 4, 5, 7.5, 7.5, 15, 13, 10, 12, 6, 3, 14, 1, 11 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 2, 9, 4, 5, 7.5, 7.5, 15, 13, 10, 12, 6, 3, 14, 1, 11 
+  
+  Wp, Wm:  42,  78 
+  
+  W=[0, 26]  
+  
+  T=  42 
+  
+  p= 0.320158 \vspace{1cm} 
+
+  korelacja: 0.345975
+     
+     fp: 0.360864
+     
+     t: 2.16518
+     
+     p.value: 0.0287587 \vspace{1cm} 
+
+  \textbf{Karta  19 } 
+ srednia: 8.62 
+     
+     wariancja 5.19457  
+     
+     b³ad standardowy 0.588477 
+     
+     przedzial=( 6.8682 10.3718 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 31.00 & 36.00 & 22.00 \\
+   & 69.00 & 64.00 & 78.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 29.67 & 29.67 & 29.67 \\
+  2 & 70.33 & 70.33 & 70.33 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 4.82454 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.0896117 \vspace{1cm} 
+
+  2, 4, 8, 5, 1, 6, 10.5, 12, 15, 13, 9, 14, 10.5, 7, 3 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 2, 4, 8, 5, 1, 6, 10.5, 12, 15, 13, 9, 14, 10.5, 7, 3 
+  
+  Wp, Wm:  3,  117 
+  
+  W=[0, 26]  
+  
+  T=  3 
+  
+  p= 0.00132905 \vspace{1cm} 
+
+  korelacja: 0.228682
+     
+     fp: 0.232798
+     
+     t: 1.39679
+     
+     p.value: 0.155801 \vspace{1cm} 
+
+  \textbf{Karta  20 } 
+ srednia: 9.44 
+     
+     wariancja 3.12971  
+     
+     b³ad standardowy 0.45678 
+     
+     przedzial=( 8.08024 10.7998 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 38.00 & 26.00 & 28.00 \\
+   & 62.00 & 74.00 & 72.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 30.67 & 30.67 & 30.67 \\
+  2 & 69.33 & 69.33 & 69.33 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 3.88796 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.143133 \vspace{1cm} 
+
+  15, 4, 3, 14, 1.5, 6, 9, 12, 8, 1.5, 11, 5, 13, 10, 7 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 15, 4, 3, 14, 1.5, 6, 9, 12, 8, 1.5, 11, 5, 13, 10, 7 
+  
+  Wp, Wm:  26,  94 
+  
+  W=[0, 26]  
+  
+  T=  26 
+  
+  p= 0.0570333 \vspace{1cm} 
+
+  korelacja: 0.221705
+     
+     fp: 0.225449
+     
+     t: 1.35269
+     
+     p.value: 0.169161 \vspace{1cm} 
+
+  \textbf{Karta  21 } 
+ srednia: 9.79333 
+     
+     wariancja 7.47781  
+     
+     b³ad standardowy 0.70606 
+     
+     przedzial=( 7.6915 11.8952 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 40.00 & 43.00 & 23.00 \\
+   & 60.00 & 57.00 & 77.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 35.33 & 35.33 & 35.33 \\
+  2 & 64.67 & 64.67 & 64.67 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 10.1828 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.00614927 \vspace{1cm} 
+
+  14, 10, 12, 13, 1, 5, 6.5, 4, 2.5, 2.5, 6.5, 11, 9, 8, 15 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 14, 10, 12, 13, 1, 5, 6.5, 4, 2.5, 2.5, 6.5, 11, 9, 8, 15 
+  
+  Wp, Wm:  20.5,  99.5 
+  
+  W=[0, 26]  
+  
+  T=  20.5 
+  
+  p= 0.0266953 \vspace{1cm} 
+
+  korelacja: 0.411285
+     
+     fp: 0.437157
+     
+     t: 2.62294
+     
+     p.value: 0.00837602 \vspace{1cm} 
+
+  \textbf{Karta  22 } 
+ srednia: 9.58 
+     
+     wariancja 3.66743  
+     
+     b³ad standardowy 0.494465 
+     
+     przedzial=( 8.10806 11.0519 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 32.00 & 44.00 & 29.00 \\
+   & 68.00 & 56.00 & 71.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 35.00 & 35.00 & 35.00 \\
+  2 & 65.00 & 65.00 & 65.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 5.53846 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.0627102 \vspace{1cm} 
+
+  11, 5.5, 2, 13, 8, 3, 14, 15, 10, 4, 9, 1, 12, 7, 5.5 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 11, 5.5, 2, 13, 8, 3, 14, 15, 10, 4, 9, 1, 12, 7, 5.5 
+  
+  Wp, Wm:  25,  95 
+  
+  W=[0, 26]  
+  
+  T=  25 
+  
+  p= 0.0500117 \vspace{1cm} 
+
+  korelacja: 0.508923
+     
+     fp: 0.561275
+     
+     t: 3.36765
+     
+     p.value: 0.000798099 \vspace{1cm} 
+
+  \textbf{Karta  23 } 
+ srednia: 9.02 
+     
+     wariancja 4.91314  
+     
+     b³ad standardowy 0.572314 
+     
+     przedzial=( 7.31631 10.7237 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 32.00 & 39.00 & 32.00 \\
+   & 68.00 & 61.00 & 68.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 34.33 & 34.33 & 34.33 \\
+  2 & 65.67 & 65.67 & 65.67 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 1.44892 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.484587 \vspace{1cm} 
+
+  15, 14, 12, 6.5, 8, 5, 6.5, 3.5, 9, 13, 2, 1, 10, 3.5, 11 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 15, 14, 12, 6.5, 8, 5, 6.5, 3.5, 9, 13, 2, 1, 10, 3.5, 11 
+  
+  Wp, Wm:  63,  57 
+  
+  W=[0, 26]  
+  
+  T=  63 
+  
+  p= 0.887042 \vspace{1cm} 
+
+  korelacja: 0.232610
+     
+     fp: 0.236947
+     
+     t: 1.42168
+     
+     p.value: 0.148625 \vspace{1cm} 
+
+  \textbf{Karta  24 } 
+ srednia: 8.93333 
+     
+     wariancja 6.5481  
+     
+     b³ad standardowy 0.660711 
+     
+     przedzial=( 6.9665 10.9002 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 36.00 & 39.00 & 21.00 \\
+   & 64.00 & 61.00 & 79.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 32.00 & 32.00 & 32.00 \\
+  2 & 68.00 & 68.00 & 68.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 8.5478 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.0139274 \vspace{1cm} 
+
+  10, 2, 6, 6, 1, 3.5, 9, 3.5, 12.5, 15, 11, 6, 12.5, 14, 8 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 10, 2, 6, 6, 1, 3.5, 9, 3.5, 12.5, 15, 11, 6, 12.5, 14, 8 
+  
+  Wp, Wm:  11.5,  108.5 
+  
+  W=[0, 26]  
+  
+  T=  11.5 
+  
+  p= 0.00634265 \vspace{1cm} 
+
+  korelacja: -0.0250077
+     
+     fp: -0.0250129
+     
+     t: -0.150077
+     
+     p.value: 0.878263 \vspace{1cm} 
+
+  \textbf{Karta  25 } 
+ srednia: 8.56667 
+     
+     wariancja 6.08524  
+     
+     b³ad standardowy 0.636932 
+     
+     przedzial=( 6.67062 10.4627 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 35.00 & 33.00 & 25.00 \\
+   & 65.00 & 67.00 & 75.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 31.00 & 31.00 & 31.00 \\
+  2 & 69.00 & 69.00 & 69.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 2.61805 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.270084 \vspace{1cm} 
+
+  6, 15, 1, 14, 13, 2, 5, 7, 9, 11, 8, 4, 3, 12, 10 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 6, 15, 1, 14, 13, 2, 5, 7, 9, 11, 8, 4, 3, 12, 10 
+  
+  Wp, Wm:  27,  92 
+  
+  W=[0, 26]  
+  
+  T=  24 
+  
+  p= 0.0787915 \vspace{1cm} 
+
+  korelacja: 0.481036
+     
+     fp: 0.524331
+     
+     t: 3.14599
+     
+     p.value: 0.00167724 \vspace{1cm} 
+
+  \textbf{Karta  26 } 
+ srednia: 9.22 
+     
+     wariancja 7.20029  
+     
+     b³ad standardowy 0.692834 
+     
+     przedzial=( 7.15754 11.2825 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 32.00 & 29.00 & 21.00 \\
+   & 68.00 & 71.00 & 79.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:34 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 27.33 & 27.33 & 27.33 \\
+  2 & 72.67 & 72.67 & 72.67 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 3.25576 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.196345 \vspace{1cm} 
+
+  15, 12, 10, 9, 13, 14, 7, 5, 4, 1, 2, 11, 8, 6, 3 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 15, 12, 10, 9, 13, 14, 7, 5, 4, 1, 2, 11, 8, 6, 3 
+  
+  Wp, Wm:  23,  97 
+  
+  W=[0, 26]  
+  
+  T=  23 
+  
+  p= 0.0353394 \vspace{1cm} 
+
+  korelacja: 0.326354
+     
+     fp: 0.338743
+     
+     t: 2.03246
+     
+     p.value: 0.0398552 \vspace{1cm} 
+
+  \textbf{Karta  27 } 
+ srednia: 7.60667 
+     
+     wariancja 6.99924  
+     
+     b³ad standardowy 0.683093 
+     
+     przedzial=( 5.57321 9.64013 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:35 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 33.00 & 34.00 & 26.00 \\
+   & 67.00 & 66.00 & 74.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:35 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 31.00 & 31.00 & 31.00 \\
+  2 & 69.00 & 69.00 & 69.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 1.77653 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.411369 \vspace{1cm} 
+
+  3, 10, 3, 14, 12, 11, 1, 3, 6, 15, 13, 9, 6, 6, 8 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 3, 10, 3, 14, 12, 11, 1, 3, 6, 15, 13, 9, 6, 6, 8 
+  
+  Wp, Wm:  14,  106 
+  
+  W=[0, 26]  
+  
+  T=  14 
+  
+  p= 0.00964217 \vspace{1cm} 
+
+  korelacja: 0.434886
+     
+     fp: 0.465906
+     
+     t: 2.79544
+     
+     p.value: 0.00504259 \vspace{1cm} 
+
+  \textbf{Karta  28 } 
+ srednia: 10.0933 
+     
+     wariancja 4.44495  
+     
+     b³ad standardowy 0.544362 
+     
+     przedzial=( 8.47285 11.7138 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:35 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 36.00 & 30.00 & 23.00 \\
+   & 64.00 & 70.00 & 77.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:35 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 29.67 & 29.67 & 29.67 \\
+  2 & 70.33 & 70.33 & 70.33 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 4.05772 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.131485 \vspace{1cm} 
+
+  9, 6, 5, 13, 12, 10, 4, 8, 1, 7, 11, 2, 14, 15, 3 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 9, 6, 5, 13, 12, 10, 4, 8, 1, 7, 11, 2, 14, 15, 3 
+  
+  Wp, Wm:  39,  81 
+  
+  W=[0, 26]  
+  
+  T=  39 
+  
+  p= 0.252380 \vspace{1cm} 
+
+  korelacja: 0.246454
+     
+     fp: 0.251634
+     
+     t: 1.50980
+     
+     p.value: 0.125266 \vspace{1cm} 
+
+  \textbf{Karta  29 } 
+ srednia: 9.5 
+     
+     wariancja 3.67429  
+     
+     b³ad standardowy 0.494927 
+     
+     przedzial=( 8.02668 10.9733 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:35 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 43.00 & 29.00 & 25.00 \\
+   & 57.00 & 71.00 & 75.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:35 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 32.33 & 32.33 & 32.33 \\
+  2 & 67.67 & 67.67 & 67.67 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 8.16617 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.0168554 \vspace{1cm} 
+
+  1.5, 3, 14, 7, 4, 11, 8, 5.5, 10, 12.5, 12.5, 5.5, 15, 1.5, 9 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 1.5, 3, 14, 7, 4, 11, 8, 5.5, 10, 12.5, 12.5, 5.5, 15, 1.5, 9 
+  
+  Wp, Wm:  25,  95 
+  
+  W=[0, 26]  
+  
+  T=  25 
+  
+  p= 0.0499193 \vspace{1cm} 
+
+  korelacja: 0.14464
+     
+     fp: 0.145662
+     
+     t: 0.87397
+     
+     p.value: 0.373212 \vspace{1cm} 
+
+  \textbf{Karta  30 } 
+ srednia: 9.66 
+     
+     wariancja 7.644  
+     
+     b³ad standardowy 0.713863 
+     
+     przedzial=( 7.53494 11.7851 \vspace{1cm} 
+
+  Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:35 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+x & 34.00 & 35.00 & 18.00 \\
+   & 66.00 & 65.00 & 82.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   oczekiwane: % latex table generated in R 2.8.0 by xtable 1.5-4 package
+% Tue Nov 04 18:31:35 2008
+\begin{tabular}{rrrr}
+  \hline
+ & 1 & 2 & 3 \\
+  \hline
+1 & 29.00 & 29.00 & 29.00 \\
+  2 & 71.00 & 71.00 & 71.00 \\
+   \hline
+\end{tabular}
+ 
+   
+   T= 8.83924 
+   
+   W=[ 5.99146 , $\\infty$) 
+   
+   p= 0.0120388 \vspace{1cm} 
+
+  10, 11, 5.5, 8, 2, 7, 3, 13, 15, 4, 9, 12, 5.5, 14, 1 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: 10, 11, 5.5, 8, 2, 7, 3, 13, 15, 4, 9, 12, 5.5, 14, 1 
+  
+  Wp, Wm:  10.5,  109.5 
+  
+  W=[0, 26]  
+  
+  T=  10.5 
+  
+  p= 0.00537636 \vspace{1cm} 
+
+  korelacja: -0.0381528
+     
+     fp: -0.0381713
+     
+     t: -0.229028
+     
+     p.value: 0.815192 \vspace{1cm} \end{multicols}  \end{document} 

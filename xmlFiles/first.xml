@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE content>
+<content>
+
+ <preambule>
+ <![CDATA[
+  \usepackage[OT4,plmath,MeX]{polski}
+ ]]>
+ </preambule>
+ 
+ <main>
+ </main>
+
+ <tasks> 
+   <task name="1">
+    <initData>
+      x = round(rnorm(15)*25)/10 + 9
+    </initData>
+    
+    <resultsComputation>
+     vx = var(x)
+     sx = sd(x)
+    </resultsComputation>
+    
+    <taskContent>
+ <![CDATA[
+     \section*{Zadanie 1}
+     
+     Zmierzono stê¿enie albumin we krwi dla 15 osób. 
+     Wyniki pomiarów bez jednostek przedstawione s¹ poni¿ej. 
+     
+     \noindent $$X=( %R% paste(format(x,digits=2),collapse=", ") %R% ).$$
+     
+     Przyjmuj¹c, ¿e stê¿enie albumin we krwi ma rozk³ad normalny, 
+     wyznacz: œredni¹, wariancjê, b³¹d standardowy dla œredniej oraz 99\% przedzia³ ufnoœci dla œredniej.
+
+ ]]>
+    </taskContent>
+   
+    <resultContent>
+ <![CDATA[
+
+     srednia: %R% format(mean(x), digits=6) %R% 
+     
+     wariancja %R%  format(vx, digits=6)  %R%  
+     
+     b³ad standardowy %R%  format(sx/sqrt(15), digits=6) %R% 
+     
+     przedzial=( %R%  paste(format(mean(x) + qt(0.005,14)*sx/sqrt(15),digits=6) , format(mean(x) + qt(0.995,14)*sx/sqrt(15),digits=6), collapse=", ") %R% 
+     
+ ]]>
+    </resultContent>
+   </task>
+
+   <task name="2">
+    <initData>
+      x = rbinom(3,100,c(0.35,0.35,0.25))
+      t = chisq.test(rbind(x, 100-x))
+    </initData>
+    
+    <resultsComputation>
+      a = print(xtable(rbind(x, 100-x)), floating=F, file="clipboard")
+      b = print(xtable(rbind(sum(x)*c(1,1,1)/3, 100-sum(x)*c(1,1,1)/3)), floating=F, file="clipboard")
+    </resultsComputation>
+    
+    <taskContent>
+ <![CDATA[
+     \section*{Zadanie 2}
+     
+  Przeprowadzono eksperyment, maj¹cy na celu ustalenie, czy zachorowalnoœæ na przeziêbienie zale¿y od rasy.
+  
+  Do badania wybrano 100 osobników rasy bia³ej, 100 osobników rasy ¿ó³tej i 100 osobników rasy czarnej. 
+  
+  W wyniku badania okaza³o siê, ¿e zachorowa³o %R% x[1] %R% osobników rasy bia³ej, %R% x[2] %R% osobników rasy ¿ó³ej oraz %R% x[3] %R% osobników rasy czarnej. 
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. 
+     
+ ]]>
+    </taskContent>
+   
+    <resultContent>
+ <![CDATA[
+   Test chi2 dla niezale¿noœci 
+   
+   liczebnosci: %R% a %R% 
+   
+   oczekiwane: %R% b %R% 
+   
+   T= %R% format(t$statistic, digits=6) %R% 
+   
+   W=[ %R% format(qchisq(0.95,2), digits=6) %R% , $\\infty$) 
+   
+   p= %R% format(t$p.value, digits=6) %R% 
+     
+ ]]>
+    </resultContent>
+   </task>
+
+   <task name="3">
+    <initData>
+ <![CDATA[
+      x = round(rexp(15)*30)
+      y = round(rexp(15)*30+18)
+      rxy= rank(abs(x-y))
+    
+      Wp = sum(rxy[x-y>0])
+      Wm = sum(rxy[x-y<0])
+ ]]>
+    </initData>
+    
+    <resultsComputation>
+      t = wilcox.test(x,y, paired=T)
+      a = gsub(".00","",print(xtable(rbind(przed=(x),po=floor(y))), floating=F, file="clipboard",include.colnames=F))
+    </resultsComputation>
+    
+    <taskContent>
+ <![CDATA[
+     \section*{Zadanie 3}
+     
+  Interesuje nas stê¿enie markera APE55  w organizmie. 
+  Wiemy, ¿e to stê¿enie przyjmuje wartoœci o rozk³adzie wyk³adniczym. 
+  Dla 15 pacjentów zbadaliœmy stê¿enie przed i po podaniu pewnego leku, 
+  wyniki przedstawiono poni¿ej.
+  
+  \vspace{0.5cm} 
+  \noindent\begin{center} 
+  %R% a %R% 
+  \end{center} 
+  \vspace{0.5cm}
+  
+  Chcemy sprawdziæ, czy ten lek zmienia istotnie wartoœæ stê¿enia APE55.
+  
+  Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+  Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+  Wyznacz wartoœæ statystyki testowej. 
+  Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+  Napisz jak¹ decyzjê sugeruje wynik testowania. Oszacuj p-wartoœæ. 
+
+ ]]>
+    </taskContent>
+   
+    <resultContent>
+ <![CDATA[
+     %R% a = paste(rxy, collapse=", ") %R% 
+
+  Test Wilcoxona dla danych sparowanych. 
+  
+  rangi: %R% a %R% 
+  
+  Wp, Wm:  %R% Wp %R%,  %R% Wm %R% 
+  
+  W=[0, 26]  
+  
+  T=  %R% format(t$statistic, digits=6) %R% 
+  
+  p= %R%  format(t$p.value, digits=6)  %R% 
+     
+ ]]>
+    </resultContent>
+   </task>
+
+   <task name="4">
+    <initData>
+     x = rnorm(40)
+     y = rnorm(40) + x/4 
+    </initData>
+    
+    <resultsComputation>
+     tes = cor.test(x,y)
+     co = tes$estimate
+    </resultsComputation>
+    
+    <taskContent>
+ <![CDATA[
+     \section*{Zadanie 4}
+     
+     Zmierzono korelacjê pomiêdzy stê¿eniem albumin w krwi a liczb¹ wypalonych dziennie papierosów. 
+     Badania przeprowadzono na 39 elementowej próbie wybranej losowo z populacji. 
+     Otrzymano wspó³czynnik korelacji $\hat\rho = %R% format(tes$estimate, digits=4) %R% $. 
+     SprawdŸ czy ta zale¿noœæ jest istotna statystycznie. 
+     
+     Sformu³uj hipotezê zerow¹ i alternatywn¹. 
+     Podaj nazwê najbardziej odpowiedniego testu do weryfikacji tej hipotezy. 
+     Wyznacz wartoœæ statystyki testowej. 
+     Wyznacz obszar odrzucenia dla poziomu istotnoœci $\alpha=0.05$. 
+     Napisz jak¹ decyzjê sugeruje wynik testowania. 
+     Oszacuj p-wartoœæ.
+     
+ ]]>
+    </taskContent>
+   
+    <resultContent>
+ <![CDATA[
+     korelacja: %R% format(tes$estimate, digits=6) %R%
+     
+     fp: %R% format(log((1+co)/(1-co))/2, digits=6) %R%
+     
+     t: %R% format(3*log((1+co)/(1-co)), digits=6) %R%
+     
+     p.value: %R% format(tes$p.value, digits=6) %R%
+     
+ ]]>
+    </resultContent>
+   </task>
+
+  </tasks>
+</content>
+
